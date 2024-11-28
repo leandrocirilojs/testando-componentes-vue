@@ -93,9 +93,8 @@ const ModalComponent = {
       <button @click="showModal = true">Show Modal</button>
       <div v-if="showModal" class="modal" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center;">
         <div style="background: white; padding: 20px; text-align: center;">
-        <li v-for="(item, index) in items" :key="index">
-          {{ item }}</li>
-          <h2>Modal Content</h2>
+        
+          <h2>Modal Content {{item}}</h2>
           <p>This is a simple modal example!</p>
           <button @click="showModal = false">Close</button>
         </div>
